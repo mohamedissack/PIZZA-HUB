@@ -27,7 +27,7 @@ body {
 }
 
 .landing {
-    background-image: url('/images/pizza-table.jpg');
+    background-image: url('images/pizza-table.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
