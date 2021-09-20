@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+}
+
+html,
+body,
+header,
+.landing {
+    overflow-x: hidden;
+    height: 100%;
+    scroll-behavior: smooth;
+
+}
+
+.nav-link {
+    color: white;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
