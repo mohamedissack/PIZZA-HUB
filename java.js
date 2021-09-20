@@ -144,4 +144,41 @@ $(document).ready(function () {
             $("button#deliver").slideDown(1000);
             $("#pizzatotal").append("Your bill is ksh. " + checkoutTotal);
         })
-        
+        // home button
+        $("button.deliver").click(function () {
+            $(".pizzatable").hide();
+            $(".choice h2").hide();
+            $(".delivery").slideDown(1000);
+            $("#addedprice").hide();
+            $("button.deliver").hide();
+            $("#pizzatotal").hide();
+
+            let deliveryAmount = checkoutTotal + 150;
+            $("#totalbill").append("Your bill plus delivery fee is: " + deliveryAmount);
+        })
+
+        $("button#final-order").click(function (event) {
+            event.preventDefault();
+            $("#pizzatotal").hide();
+            $(".delivery").hide();
+            $("button#final-order").hide();
+            let deliceryAmount = checkoutTotal + 150;
+
+            let person = $("input#name").val();
+            let phone = $("input#phone").val();
+            let location = $("input#location").val();
+
+            if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
+                $("#finallmessage").append(person + ", We have recieved your order and the delivery wil be made  at  " + location + ". Prepare ksh. " + deliceryAmount);
+                $("#totalbill").hide();
+                $("#finallmessage").slideDown(1200);
+            } else {
+                alert("Please fill in the deliver details");
+                $(".delivery").show();
+                $("button#final-order").show();
+            }
+
+        })
+        event.preventDefault();
+    })
+})
