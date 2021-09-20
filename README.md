@@ -1,7 +1,11 @@
+# pizza Hub
+
+  This is a pizza hub  where customers order their delicious pizza type online and get delivered instantly.
+
+
 ## Demo
 Here is a working live demo : 
 ## Mobile support
-The pizza website is compatible with devices of all sizes and all OS's, and consistent improvements are being made.## Mobile support
 The pizza website is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 ### Development
 Want to contribute? Awesome!
@@ -13,3 +17,12 @@ To fix a bug or enhance an existing module, follow these steps:
 - Commit your changes (`git commit -am 'Improve feature'`)
 - Push to the branch (`git push origin improve-feature`)
 - Create a Pull Request
+## Built with
+-  HTML .
+-  css .
+- JQuery.
+- javascript.
+## Author
+- Mohamed Issack
+## License
+[MIT]
